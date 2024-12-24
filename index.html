@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Magic for Ana</title>
+    <style>
+        /* Base styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('custom-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures full viewport height */
+        }
+
+        /* Centering content */
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+            flex-grow: 1; /* Makes the main content area take up remaining space */
+        }
+
+        /* Festive headline */
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin: 0;
+            color: #ff0000;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Poetic verses */
+        .verse {
+            margin: 30px auto;
+            font-size: 1.8rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.9);
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+        }
+
+        /* Decorative cards */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, background 0.3s ease, backdrop-filter 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.4); /* Increased opacity to darken the hover effect */
+            backdrop-filter: blur(20px); /* Darker blur effect */
+        }
+        .card h3 {
+            margin: 0;
+            font-size: 1.6rem;
+            color: #ff0000;
+        }
+        .card p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            color: white; /* Keep text white */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Black outline effect */
+        }
+        .card:hover p {
+            opacity: 1;
+            visibility: visible;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 1); /* Darker outline on hover */
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1rem;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: auto; /* Ensures footer is pushed to the bottom */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+            .verse {
+                font-size: 1.5rem;
+            }
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎄 Christmas Wishes for Ana 🎄</h1>
+
+        <div class="verse">
+            "The snowflakes fall, the candles glow,<br>
+            In your heart, the spirit grows.<br>
+            Christmas magic, warm and bright,<br>
+            Wraps your world in love tonight."
+        </div>
+
+        <div class="verse">
+            "Ana, you’re a gift, a joy to know,<br>
+            Like twinkling lights in winter’s snow.<br>
+            May your days be merry and your nights divine,<br>
+            With blessings that forever shine."
+        </div>
+
+        <!-- Wishes Cards -->
+        <div class="card-container">
+            <div class="card">
+                <h3>🎁 A Gift of Joy</h3>
+                <p>May your days be filled with laughter, and your heart with joy. You are a treasure, Ana!</p>
+            </div>
+            <div class="card">
+                <h3>❄️ Winter Wonder</h3>
+                <p>In this magical season, may you find beauty in every snowflake and warmth in every hug.</p>
+            </div>
+            <div class="card">
+                <h3>✨ Sparkle Bright</h3>
+                <p>You light up the world like a Christmas star. Keep shining, Ana, because you’re extraordinary.</p>
+            </div>
+            <div class="card">
+                <h3>🌟 A Season of Love</h3>
+                <p>May your Christmas be as wonderful as your heart, filled with love, peace, and happiness.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Celebrating Christmas with Ana | © 2024 Made with Love
+    </div>
+</body>
+</html>
